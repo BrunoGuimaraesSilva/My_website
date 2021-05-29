@@ -1,8 +1,19 @@
-import '../styles/index.css'
-
-import type { AppProps } from 'next/app'
+import "../styles/index.css";
+import type { AppProps } from "next/app";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import { createStore, applyMiddleware, Store } from "redux";
+import reducer from "../store/reducer";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  const store: Store<SpinState, SpinAction> & {
+    dispatch: DispatchType;
+  } = createStore(reducer, applyMiddleware(thunk));
+  
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  );
 }
-export default MyApp
+export default MyApp;
