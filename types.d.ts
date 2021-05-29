@@ -1,7 +1,3 @@
-interface ISpin {
-  spinning: boolean;
-}
-
 type SpinAction = {
   type: string;
 };
