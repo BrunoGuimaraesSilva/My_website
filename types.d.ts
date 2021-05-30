@@ -7,3 +7,5 @@ type SpinState = {
 };
 
 type DispatchType = (args: SpinAction) => SpinAction;
+
+declare module 'typewriter-effect/dist/core';
