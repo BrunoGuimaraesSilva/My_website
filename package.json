@@ -10,13 +10,18 @@
   "dependencies": {
     "antd": "^4.16.0",
     "axios": "^0.21.1",
+    "json-server": "^0.16.3",
+    "momentjs": "^2.0.0",
     "next": "10.2.3",
+    "public-ip": "^4.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "^7.2.4",
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "serverless-mysql": "^1.5.4",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
     "@types/antd": "^1.0.0",

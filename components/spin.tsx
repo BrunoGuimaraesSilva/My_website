@@ -20,5 +20,9 @@ export const CustonSpin: React.FC<Props> = ({ children }) => {
 
   Router.events.on("routeChangeError", () => dispatch(stopSpin()));
 
-  return <Spin spinning={spin}>{children}</Spin>;
+  return (
+    <Spin style={{ height: "100vh" }} spinning={spin}>
+      {children}
+    </Spin>
+  );
 };

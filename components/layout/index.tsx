@@ -1,7 +1,7 @@
 import { Layout } from "antd";
-import { AntHeader } from "./header";
-import { AntFooter } from "./footer";
-import { CustonSpin } from "./spin";
+import { AntHeader } from "../header";
+import { AntFooter } from "../footer";
+import { CustonSpin } from "../spin";
 const { Content } = Layout;
 
 type Props = {
@@ -13,7 +13,9 @@ export function Body({ children }: Props) {
     <CustonSpin>
       <Layout className="layout">
         <AntHeader />
-        <Content style={{ padding: "0 50px" }}>{children}</Content>
+        <Content className="container">
+          {children}
+        </Content>
         <AntFooter />
       </Layout>
     </CustonSpin>

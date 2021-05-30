@@ -13,7 +13,7 @@ export function AntHeader() {
       <Menu theme="dark" mode="horizontal">
         <Menu.Item icon={<UserOutlined />} key="1">
           <Link href="/">
-            <a>Sobre mim </a>
+            <a>Sobre mim</a>
           </Link>
         </Menu.Item>
         <Menu.Item icon={<HighlightOutlined />} key="2">
