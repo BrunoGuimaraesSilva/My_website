@@ -1,23 +1,2 @@
-import { Layout } from "antd";
-import { AntHeader } from "../header";
-import { AntFooter } from "../footer";
-import { CustonSpin } from "../spin";
-const { Content } = Layout;
-
-type Props = {
-  children?: JSX.Element;
-};
-
-export function Body({ children }: Props) {
-  return (
-    <CustonSpin>
-      <Layout className="layout">
-        <AntHeader />
-        <Content className="container">
-          {children}
-        </Content>
-        <AntFooter />
-      </Layout>
-    </CustonSpin>
-  );
-}
+export * from './desktop'
+export * from './mobile'
