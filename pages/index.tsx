@@ -5,7 +5,7 @@ import animation from "../animations/rocket.json";
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect/dist/core";
 import { InfoContainer } from "../styles/pages/home";
-import { useWindowSize } from "../utils/useWindows";
+import { ResponseWindow } from "../utils/useWindows";
 
 export default function Home() {
    useEffect(() => {
@@ -86,5 +86,6 @@ export default function Home() {
          </Row>
       </MobileBody>
    );
-   return <Desktop />;
+   console.log(ResponseWindow())
+   return ResponseWindow() ? <Desktop /> : <Mobile/>;
 }
